@@ -1,0 +1,22 @@
+.acerca-de {
+    width: 80%;
+    max-width: 100rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .acerca-de h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .acerca-de p {
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  

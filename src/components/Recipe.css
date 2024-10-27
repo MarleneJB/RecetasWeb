@@ -1,0 +1,58 @@
+.recipes {
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas */
+  gap: 2rem; /* Espacio entre tarjetas */
+  margin-top: 2rem; /* Margen superior */
+  padding: 2rem; /* Relleno */
+  min-height: 400px; /* Altura mínima para evitar que el contenedor se mueva */
+}
+
+.recipe-card {
+  width: 250px; /* Ancho fijo para cada tarjeta */
+  height: 350px; /* Altura fija para cada tarjeta */
+  display: flex;
+  flex-direction: column; /* Para que el contenido se apile verticalmente */
+  justify-content: flex-start; /* Cambiado para que el contenido se alinee desde arriba */
+  border: 1px solid #ccc; /* Borde para las tarjetas */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 1rem; /* Relleno interno de las tarjetas */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para darle profundidad */
+  position: relative; /* Necesario para el posicionamiento absoluto */
+  overflow: hidden; /* Oculta el contenido que se desborda */
+}
+/* Imagen dentro de la tarjeta */
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Título de la receta */
+.recipe-card h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Enlace a la receta */
+.recipe-card a {
+  color: #7c075d;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+/* Botón de ingredientes */
+.recipe-card button {
+  background-color: #1a34a1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recipe-card button:hover {
+  background-color: #7c075d;
+}

@@ -1,0 +1,60 @@
+/* Asegúrate de que el contenedor principal tome el 100% de la altura de la página */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Asegura que el contenido tome todo el espacio disponible antes del footer */
+.main-content {
+    flex: 1; /* Hace que el contenido tome el espacio restante */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-top: 10px;
+}

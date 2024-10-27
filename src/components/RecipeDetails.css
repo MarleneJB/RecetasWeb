@@ -1,0 +1,22 @@
+.ingredient-list {
+    display: none; /* Oculta la lista de ingredientes por defecto */
+    position: absolute; /* Posiciona los ingredientes sobre la tarjeta */
+    bottom: 0; /* Ubica en la parte inferior de la tarjeta */
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Fondo blanco para la lista de ingredientes */
+    z-index: 10; /* Asegúrate de que esté por encima de la tarjeta */
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para la lista de ingredientes */
+  }
+  .ingredient-text, .ingredient-weight {
+    margin: 0.2rem 0; /* Espacio entre cada ingrediente */
+  }
+/* Estilo para el peso del ingrediente */
+.ingredient-weight {
+    font-size: 1.2rem; /* Tamaño de fuente más pequeño para el peso */
+    color: #777; /* Color gris para menos énfasis */
+}
+.recipe-card.show-ingredients .ingredient-list {
+    display: block; /* Muestra la lista de ingredientes al hacer clic */
+  }
