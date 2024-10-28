@@ -1,26 +1,38 @@
-.descripInicio {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 16px auto; 
-    background-color: #fff;
-    width: 80%; 
-    max-width: 900px; 
-    text-align: center; 
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../public/image.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 10px; /* Añade un poco de espacio alrededor del contenido */
+    box-sizing: border-box;
+     /* Asegura que el padding se incluya en el tamaño total */
 }
 
-.descripInicio h2, .descripInicio h3 {
+.banner h2 {
+    font-size: 48px;
     margin: 0;
-    padding: 8px 0;
 }
 
-.descripInicio h2 {
-    font-size: 24px;
-    color: #333;
+.banner h3 {
+    font-size: 18px;
+    color: #fff; 
+    line-height: 1.5;
+    text-align: justify; /* Cambia a justify */
+    padding-top: 20px; 
+    max-width: 800px; /* Define un ancho máximo para el texto */
+    width: 90%; /* Asegura que el texto ocupe todo el ancho disponible */
 }
 
-.descripInicio h3 {
-    font-size: 16px;
-    color: #666;
+/* Para crear un efecto de justificación adecuado */
+.banner h3::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }

@@ -1,11 +1,10 @@
 import React from "react";
-import Search from "../components/search"; 
 import './Inicio.css';
 
 const Inicio = () => {
   return (
     <>
-      <div className="descripInicio">
+      <div className="banner">
         <h2>Recetas de cocina</h2>
         <h3>
           En Recetas de cocina encontrarás las mejores recetas de cocina tradicionales, técnicas innovadoras,
@@ -26,7 +25,6 @@ const Inicio = () => {
           ¡Explora, aprende y disfruta cocinando con nosotros en Recetas de cocina! 
         </h3>
       </div>
-      <Search />
     </>
   );
 };
