@@ -1,6 +1,6 @@
 .contacto-container {
-  width: 130%; /* Aumenta el ancho del contenedor */
-  max-width: 120rem; /* Ancho máximo para pantallas grandes */
+  width: 130%;
+  max-width: 120rem; 
   margin: 5rem auto;
   display: flex;
   gap: 10rem; 
@@ -8,7 +8,7 @@
 }
 
 .contacto {
-  flex: 2; /* Ajusta el ancho del formulario */
+  flex: 2; 
   padding: 2rem;
   background-color: #f8f9fa;
   border-radius: 0.5rem;
@@ -63,7 +63,7 @@
 }
 
 .map-container {
-  flex: 3; /* Aumenta el ancho del mapa para que ocupe más espacio horizontal */
+  flex: 3; 
   height: 450px;
   border-radius: 0.5rem;
   overflow: hidden;

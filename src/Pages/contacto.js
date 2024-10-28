@@ -10,7 +10,7 @@ const Contacto = () => {
     mensaje: '',
   });
 
-  // Manejar cambios en los campos del formulario
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -19,24 +19,24 @@ const Contacto = () => {
     });
   };
 
-  // Manejar el envío del formulario
+ 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevenir el comportamiento por defecto del formulario
-    console.log('Formulario enviado:', formData); // Agregar este log para depuración
+    e.preventDefault(); 
+    console.log('Formulario enviado:', formData); 
 
     try {
-      const response = await fetch('http://localhost:5000/contacts', { // Cambia la URL según tu configuración
+      const response = await fetch('http://localhost:5000/contacts', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData), // Enviar los datos del formulario
+        body: JSON.stringify(formData), 
       });
 
       if (response.ok) {
         const data = await response.json();
-        console.log('Contacto enviado:', data); // Puedes manejar la respuesta como desees
-        // Limpiar el formulario después de enviar
+        console.log('Contacto enviado:', data); 
+      
         setFormData({
           nombre: '',
           email: '',
@@ -44,9 +44,9 @@ const Contacto = () => {
           asunto: '',
           mensaje: '',
         });
-        alert('Contacto enviado con éxito'); // Mensaje de éxito
+        alert('Contacto enviado con éxito'); 
       } else {
-        const errorText = await response.text(); // Obtener el texto del error
+        const errorText = await response.text(); 
         console.error('Error al enviar el contacto:', errorText);
       }
     } catch (error) {
@@ -104,7 +104,7 @@ const Contacto = () => {
         </form>
       </div>
       
-      {/* Contenedor separado para el mapa */}
+      
       <div className="map-container">
         <iframe
           title="Ubicación de Monte Blanco, Fortín"
